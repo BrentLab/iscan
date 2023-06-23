@@ -1,0 +1,225 @@
+zHMM	name=pairagon	states=13	transitions=24	durations=15	seq_models=26	conseq_models=0
+
+<STATES>
+ISO 1
+100.000000
+       RGenomic1         Internal +    0    RandomGenomic                        RGenomic1 0.985000
+          RCDna1         Internal +    0       RandomCDna                           RCDna1 0.005000
+           Match         Internal +    0            Match                            Match 0.010000
+         EntryU2         Internal +    0          EntryU2                          EntryU2 0.000000
+          ExitU2         Internal +    0           ExitU2                           ExitU2 0.000000
+        EntryU12         Internal +    0         EntryU12                         EntryU12 0.000000
+         ExitU12         Internal +    0          ExitU12                          ExitU12 0.000000
+        IntronU2         Internal +    0         IntronU2                         IntronU2 0.000000
+       IntronU12         Internal +    0        IntronU12                        IntronU12 0.000000
+         Genomic         Internal +    0          Genomic                          Genomic 0.000000
+            CDna         Internal +    0             CDna                             CDna 0.000000
+       RGenomic2         Internal +    0    RandomGenomic                        RGenomic2 0.985000
+          RCDna2         Internal +    0       RandomCDna                           RCDna2 0.005000
+
+<STATE_TRANSITIONS>
+ISO 1
+100.000000
+RGenomic1	RCDna1	0.100000
+RGenomic1	Match	0.900000
+RCDna1	Match	1.000000
+Match	EntryU2	0.847225
+Match	EntryU12	0.001563
+Match	Genomic	0.017598
+Match	CDna	0.013722
+Match	RGenomic2	0.107908
+Match	RCDna2	0.011984
+EntryU2	IntronU2	1.000000
+ExitU2	Match	0.995318
+ExitU2	Genomic	0.003234
+ExitU2	CDna	0.001448
+EntryU12	IntronU12	1.000000
+ExitU12	Match	0.748428
+ExitU12	Genomic	0.223270
+ExitU12	CDna	0.028302
+IntronU2	ExitU2	1.000000
+IntronU12	ExitU12	1.000000
+Genomic	Match	0.872450
+Genomic	EntryU2	0.116399
+Genomic	EntryU12	0.011150
+CDna	Match	1.000000
+RGenomic2	RCDna2	1.000000
+
+<STATE_DURATIONS>
+RGenomic1 ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		4994	1	
+RCDna1 ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		53	1	
+Match ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		229	1	
+EntryU2 ISO 1 levels
+ISO 100.000000 2
+	CONSTANT 1 1	
+		0	
+	CONSTANT 2 16777216	
+		-300	
+ExitU2 ISO 1 levels
+ISO 100.000000 2
+	CONSTANT 1 1	
+		0	
+	CONSTANT 2 16777216	
+		-300	
+EntryU12 ISO 1 levels
+ISO 100.000000 2
+	CONSTANT 1 1	
+		0	
+	CONSTANT 2 16777216	
+		-300	
+ExitU12 ISO 1 levels
+ISO 100.000000 2
+	CONSTANT 1 1	
+		0	
+	CONSTANT 2 16777216	
+		-300	
+IntronU2 ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		4907	1	
+IntronU12 ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		4907	1	
+Genomic ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		7	1	
+CDna ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		6	1	
+RGenomic2 ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		4971	1	
+RCDna2 ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		45	1	
+RandomGenomic ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		47142	1	
+RandomCDna ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		1921	1	
+
+<SEQUENCE_MODELS>
+RGenomic1 LUT GENOMIC 1 0 5 0
+	-18.888567	-22.212875	-21.675475	-17.717233	-20.001179	
+RGenomic1NULL LUT GENOMIC 1 0 5 0
+	-18.888567	-22.212875	-21.675475	-17.717233	-20.001179	
+RCDna1 LUT DNA 1 0 5 0
+	-19.864359	-19.866365	-19.623060	-20.667657	-20.000000	
+RCDna1NULL LUT DNA 1 0 5 0
+	-19.864359	-19.866365	-19.623060	-20.667657	-20.000000	
+Match LUT PAIR 2 0 5 0
+	-19.888857	-150.813425	-123.222104	-153.715349	-39.874679	
+	-141.386173	-19.878137	-142.535061	-127.378557	-39.863665	
+	-128.349097	-145.633179	-19.641484	-146.503499	-39.629270	
+	-158.068353	-128.214483	-150.641674	-20.665724	-40.654561	
+	-39.876851	-39.866221	-39.625975	-40.653107	-40.000388	
+MatchNULL LUT PAIR 2 0 5 0
+	-38.752926	-42.077234	-41.539835	-37.581593	-39.865538	
+	-38.754932	-42.079240	-41.541841	-37.583599	-39.867545	
+	-38.511626	-41.835934	-41.298535	-37.340293	-39.624239	
+	-39.556224	-42.880532	-42.343133	-38.384891	-40.668837	
+	-38.888567	-42.212875	-41.675475	-37.717234	-40.001179	
+EntryU2 LUT GENOMIC 2 1 5 0
+	.	.	.	.	.	
+	.	.	.	.	.	
+	.	-67.750026	.	-0.132338	.	
+	.	.	.	.	.	
+	.	.	.	.	.	
+EntryU2NULL LUT GENOMIC 2 1 5 0
+	-37.777133	-41.101442	-40.564042	-36.605800	-154.679488	
+	-41.101442	-44.425750	-43.888350	-39.930108	-158.003796	
+	-40.564042	-43.888350	-43.350951	-39.392709	-157.466397	
+	-36.605800	-39.930108	-39.392709	-35.434467	-153.508155	
+	-154.679488	-158.003796	-157.466397	-153.508155	-271.581842	
+ExitU2 LUT GENOMIC 2 1 5 0
+	.	.	0.000000	.	.	
+	.	.	.	.	.	
+	.	.	.	.	.	
+	.	.	.	.	.	
+	.	.	.	.	.	
+ExitU2NULL LUT GENOMIC 2 1 5 0
+	-37.777133	-41.101442	-40.564042	-36.605800	-154.679488	
+	-41.101442	-44.425750	-43.888350	-39.930108	-158.003796	
+	-40.564042	-43.888350	-43.350951	-39.392709	-157.466397	
+	-36.605800	-39.930108	-39.392709	-35.434467	-153.508155	
+	-154.679488	-158.003796	-157.466397	-153.508155	-271.581842	
+EntryU12 LUT GENOMIC 2 1 5 0
+	.	.	.	0.000000	.	
+	.	.	.	.	.	
+	.	.	.	.	.	
+	.	.	.	.	.	
+	.	.	.	.	.	
+EntryU12NULL LUT GENOMIC 2 1 5 0
+	-37.777133	-41.101442	-40.564042	-36.605800	-154.679488	
+	-41.101442	-44.425750	-43.888350	-39.930108	-158.003796	
+	-40.564042	-43.888350	-43.350951	-39.392709	-157.466397	
+	-36.605800	-39.930108	-39.392709	-35.434467	-153.508155	
+	-154.679488	-158.003796	-157.466397	-153.508155	-271.581842	
+ExitU12 LUT GENOMIC 2 1 5 0
+	.	0.000000	.	.	.	
+	.	.	.	.	.	
+	.	.	.	.	.	
+	.	.	.	.	.	
+	.	.	.	.	.	
+ExitU12NULL LUT GENOMIC 2 1 5 0
+	-37.777133	-41.101442	-40.564042	-36.605800	-154.679488	
+	-41.101442	-44.425750	-43.888350	-39.930108	-158.003796	
+	-40.564042	-43.888350	-43.350951	-39.392709	-157.466397	
+	-36.605800	-39.930108	-39.392709	-35.434467	-153.508155	
+	-154.679488	-158.003796	-157.466397	-153.508155	-271.581842	
+IntronU2 LUT GENOMIC 1 0 5 0
+	-18.888567	-22.212875	-21.675475	-17.717233	-20.001179	
+IntronU2NULL LUT GENOMIC 1 0 5 0
+	-18.888567	-22.212875	-21.675475	-17.717233	-20.001179	
+IntronU12 LUT GENOMIC 1 0 5 0
+	-18.888567	-22.212875	-21.675475	-17.717233	-20.001179	
+IntronU12NULL LUT GENOMIC 1 0 5 0
+	-18.888567	-22.212875	-21.675475	-17.717233	-20.001179	
+Genomic LUT GENOMIC 1 0 5 0
+	-18.888567	-22.212875	-21.675475	-17.717233	-20.001179	
+GenomicNULL LUT GENOMIC 1 0 5 0
+	-18.888567	-22.212875	-21.675475	-17.717233	-20.001179	
+CDna LUT DNA 1 0 5 0
+	-19.864359	-19.866365	-19.623060	-20.667657	-20.000000	
+CDnaNULL LUT DNA 1 0 5 0
+	-19.864359	-19.866365	-19.623060	-20.667657	-20.000000	
+RGenomic2 LUT GENOMIC 1 0 5 0
+	-18.888567	-22.212875	-21.675475	-17.717233	-20.001179	
+RGenomic2NULL LUT GENOMIC 1 0 5 0
+	-18.888567	-22.212875	-21.675475	-17.717233	-20.001179	
+RCDna2 LUT DNA 1 0 5 0
+	-11.422062	-24.013269	-24.576817	-25.095979	-20.000001	
+RCDna2NULL LUT DNA 1 0 5 0
+	-19.864359	-19.866365	-19.623060	-20.667657	-20.000000	
+
+<STATE_INCREMENTS>
+                       RGenomic1	1	0
+                          RCDna1	0	1
+                           Match	1	1
+                         EntryU2	2	0
+                          ExitU2	2	0
+                        EntryU12	2	0
+                         ExitU12	2	0
+                        IntronU2	1	0
+                       IntronU12	1	0
+                         Genomic	1	0
+                            CDna	0	1
+                       RGenomic2	1	0
+                          RCDna2	0	1

@@ -1,0 +1,329 @@
+conseqscannertest.o: src/conseqscannertest.c src/ZOE.h src/zConseq.h \
+  src/zSequence.h src/zTools.h src/zEstseq.h src/zDistribution.h \
+  src/zMath.h src/zDuration.h src/zDNA.h src/zFastaFile.h \
+  src/zFeatureFactory.h src/zScanner.h src/zModel.h src/bntree/bntree.h \
+  src/bntree/node.h src/bntree/cache.h src/bntree/celllistitem.h \
+  src/zSfeature.h src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h \
+  src/zGTF.h src/zHMM.h src/zHMM_State.h src/zTransition.h \
+  src/zPhasePref.h src/zPairTransition.h src/zPairTrellis.h \
+  src/zAlnFeature.h src/zSeedUtils.h src/zProtein.h src/zTBTree.h \
+  src/zTrellis.h src/zViterbi.h
+conseqtest.o: src/conseqtest.c src/ZOE.h src/zConseq.h src/zSequence.h \
+  src/zTools.h src/zEstseq.h src/zDistribution.h src/zMath.h \
+  src/zDuration.h src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h \
+  src/zScanner.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h \
+  src/zHMM.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h
+conseqtest2.o: src/conseqtest2.c src/ZOE.h src/zConseq.h src/zSequence.h \
+  src/zTools.h src/zEstseq.h src/zDistribution.h src/zMath.h \
+  src/zDuration.h src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h \
+  src/zScanner.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h \
+  src/zHMM.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h
+factorytest.o: src/factorytest.c src/ZOE.h src/zConseq.h src/zSequence.h \
+  src/zTools.h src/zEstseq.h src/zDistribution.h src/zMath.h \
+  src/zDuration.h src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h \
+  src/zScanner.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h \
+  src/zHMM.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h
+gctest.o: src/gctest.c src/ZOE.h src/zConseq.h src/zSequence.h \
+  src/zTools.h src/zEstseq.h src/zDistribution.h src/zMath.h \
+  src/zDuration.h src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h \
+  src/zScanner.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h \
+  src/zHMM.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h
+gtf2zoe.o: src/gtf2zoe.c src/ZOE.h src/zConseq.h src/zSequence.h \
+  src/zTools.h src/zEstseq.h src/zDistribution.h src/zMath.h \
+  src/zDuration.h src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h \
+  src/zScanner.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h \
+  src/zHMM.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h
+gtftest.o: src/gtftest.c src/ZOE.h src/zConseq.h src/zSequence.h \
+  src/zTools.h src/zEstseq.h src/zDistribution.h src/zMath.h \
+  src/zDuration.h src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h \
+  src/zScanner.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h \
+  src/zHMM.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h
+iscan.o: src/iscan.c src/ZOE.h src/zConseq.h src/zSequence.h src/zTools.h \
+  src/zEstseq.h src/zDistribution.h src/zMath.h src/zDuration.h \
+  src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h src/zScanner.h \
+  src/zModel.h src/bntree/bntree.h src/bntree/node.h src/bntree/cache.h \
+  src/bntree/celllistitem.h src/zSfeature.h src/zAlignment.h \
+  src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h src/zHMM.h \
+  src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h
+mathtest.o: src/mathtest.c src/ZOE.h src/zConseq.h src/zSequence.h \
+  src/zTools.h src/zEstseq.h src/zDistribution.h src/zMath.h \
+  src/zDuration.h src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h \
+  src/zScanner.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h \
+  src/zHMM.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h
+modeltest.o: src/modeltest.c src/ZOE.h src/zConseq.h src/zSequence.h \
+  src/zTools.h src/zEstseq.h src/zDistribution.h src/zMath.h \
+  src/zDuration.h src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h \
+  src/zScanner.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h \
+  src/zHMM.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h
+pairagon.o: src/pairagon.c src/ZOE.h src/zConseq.h src/zSequence.h \
+  src/zTools.h src/zEstseq.h src/zDistribution.h src/zMath.h \
+  src/zDuration.h src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h \
+  src/zScanner.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h \
+  src/zHMM.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h src/zHardCoding.h
+pairagon2estgen.o: src/pairagon2estgen.c src/ZOE.h src/zConseq.h \
+  src/zSequence.h src/zTools.h src/zEstseq.h src/zDistribution.h \
+  src/zMath.h src/zDuration.h src/zDNA.h src/zFastaFile.h \
+  src/zFeatureFactory.h src/zScanner.h src/zModel.h src/bntree/bntree.h \
+  src/bntree/node.h src/bntree/cache.h src/bntree/celllistitem.h \
+  src/zSfeature.h src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h \
+  src/zGTF.h src/zHMM.h src/zHMM_State.h src/zTransition.h \
+  src/zPhasePref.h src/zPairTransition.h src/zPairTrellis.h \
+  src/zAlnFeature.h src/zSeedUtils.h src/zProtein.h src/zTBTree.h \
+  src/zTrellis.h src/zViterbi.h
+pairameter_estimate.o: src/pairameter_estimate.c src/ZOE.h src/zConseq.h \
+  src/zSequence.h src/zTools.h src/zEstseq.h src/zDistribution.h \
+  src/zMath.h src/zDuration.h src/zDNA.h src/zFastaFile.h \
+  src/zFeatureFactory.h src/zScanner.h src/zModel.h src/bntree/bntree.h \
+  src/bntree/node.h src/bntree/cache.h src/bntree/celllistitem.h \
+  src/zSfeature.h src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h \
+  src/zGTF.h src/zHMM.h src/zHMM_State.h src/zTransition.h \
+  src/zPhasePref.h src/zPairTransition.h src/zPairTrellis.h \
+  src/zAlnFeature.h src/zSeedUtils.h src/zProtein.h src/zTBTree.h \
+  src/zTrellis.h src/zViterbi.h src/zHardCoding.h
+scannertest.o: src/scannertest.c src/ZOE.h src/zConseq.h src/zSequence.h \
+  src/zTools.h src/zEstseq.h src/zDistribution.h src/zMath.h \
+  src/zDuration.h src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h \
+  src/zScanner.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h \
+  src/zHMM.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h
+seqedit.o: src/seqedit.c src/ZOE.h src/zConseq.h src/zSequence.h \
+  src/zTools.h src/zEstseq.h src/zDistribution.h src/zMath.h \
+  src/zDuration.h src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h \
+  src/zScanner.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h \
+  src/zHMM.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h
+seqstats.o: src/seqstats.c src/ZOE.h src/zConseq.h src/zSequence.h \
+  src/zTools.h src/zEstseq.h src/zDistribution.h src/zMath.h \
+  src/zDuration.h src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h \
+  src/zScanner.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h \
+  src/zHMM.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h
+sftest.o: src/sftest.c src/ZOE.h src/zConseq.h src/zSequence.h \
+  src/zTools.h src/zEstseq.h src/zDistribution.h src/zMath.h \
+  src/zDuration.h src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h \
+  src/zScanner.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h \
+  src/zHMM.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h
+tooltest.o: src/tooltest.c src/ZOE.h src/zConseq.h src/zSequence.h \
+  src/zTools.h src/zEstseq.h src/zDistribution.h src/zMath.h \
+  src/zDuration.h src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h \
+  src/zScanner.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h \
+  src/zHMM.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h
+zAlignment.o: src/zAlignment.c src/zAlignment.h src/zFastaFile.h \
+  src/zTools.h
+zAlignmentScanner.o: src/zAlignmentScanner.c src/zAlignmentScanner.h \
+  src/zAlignment.h src/zFastaFile.h src/zTools.h src/zBNTreeModel.h \
+  src/bntree/bntree.h src/bntree/node.h src/bntree/cache.h \
+  src/bntree/celllistitem.h src/zMath.h src/zSfeature.h src/zDNA.h \
+  src/zSequence.h
+zAlnFeature.o: src/zAlnFeature.c src/zHardCoding.h src/zHMM.h \
+  src/zDuration.h src/zDistribution.h src/zMath.h src/zTools.h \
+  src/zHMM_State.h src/zSfeature.h src/zDNA.h src/zSequence.h \
+  src/zFeatureFactory.h src/zScanner.h src/zModel.h src/bntree/bntree.h \
+  src/bntree/node.h src/bntree/cache.h src/bntree/celllistitem.h \
+  src/zEstseq.h src/zConseq.h src/zAlignment.h src/zFastaFile.h \
+  src/zEstseqSearch.h src/zStopSeq.h src/zTransition.h src/zPhasePref.h \
+  src/zGTF.h src/zAlnFeature.h
+zBNTreeModel.o: src/zBNTreeModel.c src/zBNTreeModel.h src/bntree/bntree.h \
+  src/bntree/node.h src/bntree/cache.h src/bntree/celllistitem.h \
+  src/zMath.h src/zTools.h
+zConseq.o: src/zConseq.c src/zConseq.h src/zSequence.h src/zTools.h
+zDNA.o: src/zDNA.c src/zDNA.h src/zTools.h src/zSequence.h src/zHMM.h \
+  src/zDuration.h src/zDistribution.h src/zMath.h src/zHMM_State.h \
+  src/zSfeature.h src/zFeatureFactory.h src/zScanner.h src/zModel.h \
+  src/bntree/bntree.h src/bntree/node.h src/bntree/cache.h \
+  src/bntree/celllistitem.h src/zEstseq.h src/zConseq.h src/zAlignment.h \
+  src/zFastaFile.h src/zEstseqSearch.h src/zStopSeq.h src/zTransition.h \
+  src/zPhasePref.h src/zGTF.h
+zDistribution.o: src/zDistribution.c src/zDistribution.h src/zMath.h \
+  src/zTools.h
+zDuration.o: src/zDuration.c src/zDuration.h src/zDistribution.h \
+  src/zMath.h src/zTools.h
+zEstseq.o: src/zEstseq.c src/zEstseq.h src/zSequence.h src/zTools.h
+zEstseqSearch.o: src/zEstseqSearch.c src/zEstseqSearch.h src/zTools.h \
+  src/zMath.h src/zEstseq.h src/zSequence.h
+zFastaFile.o: src/zFastaFile.c src/zFastaFile.h src/zTools.h
+zFeatureFactory.o: src/zFeatureFactory.c src/zFeatureFactory.h \
+  src/zScanner.h src/zMath.h src/zTools.h src/zModel.h \
+  src/bntree/bntree.h src/bntree/node.h src/bntree/cache.h \
+  src/bntree/celllistitem.h src/zSequence.h src/zEstseq.h src/zConseq.h \
+  src/zSfeature.h src/zDNA.h src/zAlignment.h src/zFastaFile.h \
+  src/zEstseqSearch.h src/zStopSeq.h
+zFloatwiseScoreAdd.o: src/zFloatwiseScoreAdd.c
+zGTF.o: src/zGTF.c src/zGTF.h src/zSfeature.h src/zTools.h src/zDNA.h \
+  src/zSequence.h
+zGeometricTail.o: src/zGeometricTail.c src/zGeometricTail.h src/zTools.h
+zHMM.o: src/zHMM.c src/zHMM.h src/zDuration.h src/zDistribution.h \
+  src/zMath.h src/zTools.h src/zHMM_State.h src/zSfeature.h src/zDNA.h \
+  src/zSequence.h src/zFeatureFactory.h src/zScanner.h src/zModel.h \
+  src/bntree/bntree.h src/bntree/node.h src/bntree/cache.h \
+  src/bntree/celllistitem.h src/zEstseq.h src/zConseq.h src/zAlignment.h \
+  src/zFastaFile.h src/zEstseqSearch.h src/zStopSeq.h src/zTransition.h \
+  src/zPhasePref.h src/zGTF.h src/zHardCoding.h src/zAlnFeature.h
+zHMM_State.o: src/zHMM_State.c src/zHMM_State.h src/zSfeature.h \
+  src/zTools.h src/zDNA.h src/zSequence.h src/zFeatureFactory.h \
+  src/zScanner.h src/zMath.h src/zModel.h src/bntree/bntree.h \
+  src/bntree/node.h src/bntree/cache.h src/bntree/celllistitem.h \
+  src/zEstseq.h src/zConseq.h src/zAlignment.h src/zFastaFile.h \
+  src/zEstseqSearch.h src/zStopSeq.h src/zTransition.h
+zHardCoding.o: src/zHardCoding.c src/zHardCoding.h src/zHMM.h \
+  src/zDuration.h src/zDistribution.h src/zMath.h src/zTools.h \
+  src/zHMM_State.h src/zSfeature.h src/zDNA.h src/zSequence.h \
+  src/zFeatureFactory.h src/zScanner.h src/zModel.h src/bntree/bntree.h \
+  src/bntree/node.h src/bntree/cache.h src/bntree/celllistitem.h \
+  src/zEstseq.h src/zConseq.h src/zAlignment.h src/zFastaFile.h \
+  src/zEstseqSearch.h src/zStopSeq.h src/zTransition.h src/zPhasePref.h \
+  src/zGTF.h
+zMath.o: src/zMath.c src/zMath.h src/zTools.h
+zModel.o: src/zModel.c src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zMath.h src/zTools.h
+zPairTransition.o: src/zPairTransition.c src/zTransition.h src/zMath.h \
+  src/zTools.h src/zSfeature.h src/zDNA.h src/zSequence.h src/zEstseq.h \
+  src/zPairTrellis.h src/zAlnFeature.h src/zFastaFile.h \
+  src/zFeatureFactory.h src/zScanner.h src/zModel.h src/bntree/bntree.h \
+  src/bntree/node.h src/bntree/cache.h src/bntree/celllistitem.h \
+  src/zConseq.h src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h \
+  src/zHMM.h src/zDuration.h src/zDistribution.h src/zHMM_State.h \
+  src/zPhasePref.h src/zGTF.h src/zPairTransition.h src/zSeedUtils.h
+zPairTrellis.o: src/zPairTrellis.c src/zPairTrellis.h src/zAlnFeature.h \
+  src/zTools.h src/zDNA.h src/zSequence.h src/zFastaFile.h \
+  src/zFeatureFactory.h src/zScanner.h src/zMath.h src/zModel.h \
+  src/bntree/bntree.h src/bntree/node.h src/bntree/cache.h \
+  src/bntree/celllistitem.h src/zEstseq.h src/zConseq.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zHMM.h \
+  src/zDuration.h src/zDistribution.h src/zHMM_State.h src/zTransition.h \
+  src/zPhasePref.h src/zGTF.h src/zPairTransition.h src/zSeedUtils.h \
+  src/zHardCoding.h
+zPairViterbi.o: src/zPairViterbi.c src/zTBTree.h src/zTools.h \
+  src/zViterbi.h src/zSfeature.h src/zDNA.h src/zSequence.h \
+  src/zAlnFeature.h src/zHMM.h src/zDuration.h src/zDistribution.h \
+  src/zMath.h src/zHMM_State.h src/zFeatureFactory.h src/zScanner.h \
+  src/zModel.h src/bntree/bntree.h src/bntree/node.h src/bntree/cache.h \
+  src/bntree/celllistitem.h src/zEstseq.h src/zConseq.h src/zAlignment.h \
+  src/zFastaFile.h src/zEstseqSearch.h src/zStopSeq.h src/zTransition.h \
+  src/zPhasePref.h src/zGTF.h src/zTrellis.h src/zPairTrellis.h \
+  src/zPairTransition.h src/zSeedUtils.h src/zHardCoding.h
+zPhasePref.o: src/zPhasePref.c src/zPhasePref.h src/zMath.h src/zTools.h \
+  src/zSfeature.h src/zDNA.h src/zSequence.h
+zProtein.o: src/zProtein.c src/zProtein.h src/zFastaFile.h src/zTools.h
+zScanner.o: src/zScanner.c src/zScanner.h src/zMath.h src/zTools.h \
+  src/zModel.h src/bntree/bntree.h src/bntree/node.h src/bntree/cache.h \
+  src/bntree/celllistitem.h src/zSequence.h src/zEstseq.h src/zConseq.h \
+  src/zSfeature.h src/zDNA.h src/zAlignment.h src/zFastaFile.h
+zSeedUtils.o: src/zSeedUtils.c src/zSeedUtils.h src/zTools.h src/zDNA.h \
+  src/zSequence.h
+zSequence.o: src/zSequence.c src/zSequence.h src/zTools.h
+zSfeature.o: src/zSfeature.c src/zSfeature.h src/zTools.h src/zDNA.h \
+  src/zSequence.h
+zStopSeq.o: src/zStopSeq.c src/zStopSeq.h src/zScanner.h src/zMath.h \
+  src/zTools.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSequence.h \
+  src/zEstseq.h src/zConseq.h src/zSfeature.h src/zDNA.h src/zAlignment.h \
+  src/zFastaFile.h
+zTBTree.o: src/zTBTree.c src/zTBTree.h src/zTools.h
+zTools.o: src/zTools.c src/zTools.h
+zTransition.o: src/zTransition.c src/zTransition.h src/zMath.h \
+  src/zTools.h src/zSfeature.h src/zDNA.h src/zSequence.h src/zEstseq.h \
+  src/zTrellis.h src/zFeatureFactory.h src/zScanner.h src/zModel.h \
+  src/bntree/bntree.h src/bntree/node.h src/bntree/cache.h \
+  src/bntree/celllistitem.h src/zConseq.h src/zAlignment.h \
+  src/zFastaFile.h src/zEstseqSearch.h src/zStopSeq.h src/zHMM.h \
+  src/zDuration.h src/zDistribution.h src/zHMM_State.h src/zPhasePref.h \
+  src/zGTF.h
+zTrellis.o: src/zTrellis.c src/zTrellis.h src/zDNA.h src/zTools.h \
+  src/zSequence.h src/zFeatureFactory.h src/zScanner.h src/zMath.h \
+  src/zModel.h src/bntree/bntree.h src/bntree/node.h src/bntree/cache.h \
+  src/bntree/celllistitem.h src/zEstseq.h src/zConseq.h src/zSfeature.h \
+  src/zAlignment.h src/zFastaFile.h src/zEstseqSearch.h src/zStopSeq.h \
+  src/zHMM.h src/zDuration.h src/zDistribution.h src/zHMM_State.h \
+  src/zTransition.h src/zPhasePref.h src/zGTF.h
+zViterbi.o: src/zViterbi.c src/zTBTree.h src/zTools.h src/zTrellis.h \
+  src/zDNA.h src/zSequence.h src/zFeatureFactory.h src/zScanner.h \
+  src/zMath.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zEstseq.h \
+  src/zConseq.h src/zSfeature.h src/zAlignment.h src/zFastaFile.h \
+  src/zEstseqSearch.h src/zStopSeq.h src/zHMM.h src/zDuration.h \
+  src/zDistribution.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zGTF.h src/zViterbi.h src/zAlnFeature.h src/zPairTrellis.h \
+  src/zPairTransition.h src/zSeedUtils.h
+zoe2gtf.o: src/zoe2gtf.c src/ZOE.h src/zConseq.h src/zSequence.h \
+  src/zTools.h src/zEstseq.h src/zDistribution.h src/zMath.h \
+  src/zDuration.h src/zDNA.h src/zFastaFile.h src/zFeatureFactory.h \
+  src/zScanner.h src/zModel.h src/bntree/bntree.h src/bntree/node.h \
+  src/bntree/cache.h src/bntree/celllistitem.h src/zSfeature.h \
+  src/zAlignment.h src/zEstseqSearch.h src/zStopSeq.h src/zGTF.h \
+  src/zHMM.h src/zHMM_State.h src/zTransition.h src/zPhasePref.h \
+  src/zPairTransition.h src/zPairTrellis.h src/zAlnFeature.h \
+  src/zSeedUtils.h src/zProtein.h src/zTBTree.h src/zTrellis.h \
+  src/zViterbi.h
+GLIB_CFLAGS=-I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -DHAS_GLIB
+GLIB_LFLAGS=-lglib-2.0 -static -DHAS_GLIB

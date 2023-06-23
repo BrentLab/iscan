@@ -1,0 +1,236 @@
+conseqscannertest.o: conseqscannertest.c ZOE.h zConseq.h zSequence.h \
+  zTools.h zEstseq.h zDistribution.h zMath.h zDuration.h zDNA.h \
+  zFastaFile.h zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h \
+  bntree/node.h bntree/cache.h bntree/celllistitem.h zSfeature.h \
+  zAlignment.h zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h \
+  zTransition.h zPhasePref.h zPairTransition.h zPairTrellis.h \
+  zAlnFeature.h zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+conseqtest.o: conseqtest.c ZOE.h zConseq.h zSequence.h zTools.h zEstseq.h \
+  zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+conseqtest2.o: conseqtest2.c ZOE.h zConseq.h zSequence.h zTools.h \
+  zEstseq.h zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+factorytest.o: factorytest.c ZOE.h zConseq.h zSequence.h zTools.h \
+  zEstseq.h zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+gctest.o: gctest.c ZOE.h zConseq.h zSequence.h zTools.h zEstseq.h \
+  zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+gtf2zoe.o: gtf2zoe.c ZOE.h zConseq.h zSequence.h zTools.h zEstseq.h \
+  zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+gtftest.o: gtftest.c ZOE.h zConseq.h zSequence.h zTools.h zEstseq.h \
+  zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+iscan.o: iscan.c ZOE.h zConseq.h zSequence.h zTools.h zEstseq.h \
+  zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+mathtest.o: mathtest.c ZOE.h zConseq.h zSequence.h zTools.h zEstseq.h \
+  zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+modeltest.o: modeltest.c ZOE.h zConseq.h zSequence.h zTools.h zEstseq.h \
+  zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+pairagon.o: pairagon.c ZOE.h zConseq.h zSequence.h zTools.h zEstseq.h \
+  zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h zHardCoding.h
+pairagon2estgen.o: pairagon2estgen.c ZOE.h zConseq.h zSequence.h zTools.h \
+  zEstseq.h zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+pairameter_estimate.o: pairameter_estimate.c ZOE.h zConseq.h zSequence.h \
+  zTools.h zEstseq.h zDistribution.h zMath.h zDuration.h zDNA.h \
+  zFastaFile.h zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h \
+  bntree/node.h bntree/cache.h bntree/celllistitem.h zSfeature.h \
+  zAlignment.h zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h \
+  zTransition.h zPhasePref.h zPairTransition.h zPairTrellis.h \
+  zAlnFeature.h zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h \
+  zHardCoding.h
+scannertest.o: scannertest.c ZOE.h zConseq.h zSequence.h zTools.h \
+  zEstseq.h zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+seqedit.o: seqedit.c ZOE.h zConseq.h zSequence.h zTools.h zEstseq.h \
+  zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+seqstats.o: seqstats.c ZOE.h zConseq.h zSequence.h zTools.h zEstseq.h \
+  zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+sftest.o: sftest.c ZOE.h zConseq.h zSequence.h zTools.h zEstseq.h \
+  zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+tooltest.o: tooltest.c ZOE.h zConseq.h zSequence.h zTools.h zEstseq.h \
+  zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h
+zAlignment.o: zAlignment.c zAlignment.h zFastaFile.h zTools.h
+zAlnFeature.o: zAlnFeature.c zHardCoding.h zHMM.h zDuration.h \
+  zDistribution.h zMath.h zTools.h zHMM_State.h zSfeature.h zDNA.h \
+  zSequence.h zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h \
+  bntree/node.h bntree/cache.h bntree/celllistitem.h zEstseq.h zConseq.h \
+  zAlignment.h zFastaFile.h zEstseqSearch.h zStopSeq.h zTransition.h \
+  zPhasePref.h zGTF.h zAlnFeature.h
+zConseq.o: zConseq.c zConseq.h zSequence.h zTools.h
+zDNA.o: zDNA.c zDNA.h zTools.h zSequence.h zHMM.h zDuration.h \
+  zDistribution.h zMath.h zHMM_State.h zSfeature.h zFeatureFactory.h \
+  zScanner.h zModel.h bntree/bntree.h bntree/node.h bntree/cache.h \
+  bntree/celllistitem.h zEstseq.h zConseq.h zAlignment.h zFastaFile.h \
+  zEstseqSearch.h zStopSeq.h zTransition.h zPhasePref.h zGTF.h
+zDistribution.o: zDistribution.c zDistribution.h zMath.h zTools.h
+zDuration.o: zDuration.c zDuration.h zDistribution.h zMath.h zTools.h
+zEstseq.o: zEstseq.c zEstseq.h zSequence.h zTools.h
+zEstseqSearch.o: zEstseqSearch.c zEstseqSearch.h zTools.h zMath.h \
+  zEstseq.h zSequence.h
+zFastaFile.o: zFastaFile.c zFastaFile.h zTools.h
+zFeatureFactory.o: zFeatureFactory.c zFeatureFactory.h zScanner.h zMath.h \
+  zTools.h zModel.h bntree/bntree.h bntree/node.h bntree/cache.h \
+  bntree/celllistitem.h zSequence.h zEstseq.h zConseq.h zSfeature.h \
+  zDNA.h zAlignment.h zFastaFile.h zEstseqSearch.h zStopSeq.h
+zFloatwiseScoreAdd.o: zFloatwiseScoreAdd.c
+zGTF.o: zGTF.c zGTF.h zSfeature.h zTools.h zDNA.h zSequence.h
+zGeometricTail.o: zGeometricTail.c zGeometricTail.h zTools.h
+zHMM.o: zHMM.c zHMM.h zDuration.h zDistribution.h zMath.h zTools.h \
+  zHMM_State.h zSfeature.h zDNA.h zSequence.h zFeatureFactory.h \
+  zScanner.h zModel.h bntree/bntree.h bntree/node.h bntree/cache.h \
+  bntree/celllistitem.h zEstseq.h zConseq.h zAlignment.h zFastaFile.h \
+  zEstseqSearch.h zStopSeq.h zTransition.h zPhasePref.h zGTF.h \
+  zHardCoding.h zAlnFeature.h
+zHMM_State.o: zHMM_State.c zHMM_State.h zSfeature.h zTools.h zDNA.h \
+  zSequence.h zFeatureFactory.h zScanner.h zMath.h zModel.h \
+  bntree/bntree.h bntree/node.h bntree/cache.h bntree/celllistitem.h \
+  zEstseq.h zConseq.h zAlignment.h zFastaFile.h zEstseqSearch.h \
+  zStopSeq.h zTransition.h
+zHardCoding.o: zHardCoding.c zHardCoding.h zHMM.h zDuration.h \
+  zDistribution.h zMath.h zTools.h zHMM_State.h zSfeature.h zDNA.h \
+  zSequence.h zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h \
+  bntree/node.h bntree/cache.h bntree/celllistitem.h zEstseq.h zConseq.h \
+  zAlignment.h zFastaFile.h zEstseqSearch.h zStopSeq.h zTransition.h \
+  zPhasePref.h zGTF.h
+zMath.o: zMath.c zMath.h zTools.h
+zModel.o: zModel.c zModel.h bntree/bntree.h bntree/node.h bntree/cache.h \
+  bntree/celllistitem.h zMath.h zTools.h
+zPairTransition.o: zPairTransition.c zTransition.h zMath.h zTools.h \
+  zSfeature.h zDNA.h zSequence.h zEstseq.h zPairTrellis.h zAlnFeature.h \
+  zFastaFile.h zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h \
+  bntree/node.h bntree/cache.h bntree/celllistitem.h zConseq.h \
+  zAlignment.h zEstseqSearch.h zStopSeq.h zHMM.h zDuration.h \
+  zDistribution.h zHMM_State.h zPhasePref.h zGTF.h zPairTransition.h \
+  zSeedUtils.h
+zPairTrellis.o: zPairTrellis.c zPairTrellis.h zAlnFeature.h zTools.h \
+  zDNA.h zSequence.h zFastaFile.h zFeatureFactory.h zScanner.h zMath.h \
+  zModel.h bntree/bntree.h bntree/node.h bntree/cache.h \
+  bntree/celllistitem.h zEstseq.h zConseq.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zHMM.h zDuration.h zDistribution.h \
+  zHMM_State.h zTransition.h zPhasePref.h zGTF.h zPairTransition.h \
+  zSeedUtils.h zHardCoding.h
+zPairViterbi.o: zPairViterbi.c zTBTree.h zTools.h zViterbi.h zSfeature.h \
+  zDNA.h zSequence.h zAlnFeature.h zHMM.h zDuration.h zDistribution.h \
+  zMath.h zHMM_State.h zFeatureFactory.h zScanner.h zModel.h \
+  bntree/bntree.h bntree/node.h bntree/cache.h bntree/celllistitem.h \
+  zEstseq.h zConseq.h zAlignment.h zFastaFile.h zEstseqSearch.h \
+  zStopSeq.h zTransition.h zPhasePref.h zGTF.h zTrellis.h zPairTrellis.h \
+  zPairTransition.h zSeedUtils.h zHardCoding.h
+zPhasePref.o: zPhasePref.c zPhasePref.h zMath.h zTools.h zSfeature.h \
+  zDNA.h zSequence.h
+zProtein.o: zProtein.c zProtein.h zFastaFile.h zTools.h
+zScanner.o: zScanner.c zScanner.h zMath.h zTools.h zModel.h \
+  bntree/bntree.h bntree/node.h bntree/cache.h bntree/celllistitem.h \
+  zSequence.h zEstseq.h zConseq.h zSfeature.h zDNA.h zAlignment.h \
+  zFastaFile.h
+zSeedUtils.o: zSeedUtils.c zSeedUtils.h zTools.h zDNA.h zSequence.h
+zSequence.o: zSequence.c zSequence.h zTools.h
+zSfeature.o: zSfeature.c zSfeature.h zTools.h zDNA.h zSequence.h
+zStopSeq.o: zStopSeq.c zStopSeq.h zScanner.h zMath.h zTools.h zModel.h \
+  bntree/bntree.h bntree/node.h bntree/cache.h bntree/celllistitem.h \
+  zSequence.h zEstseq.h zConseq.h zSfeature.h zDNA.h zAlignment.h \
+  zFastaFile.h
+zTBTree.o: zTBTree.c zTBTree.h zTools.h
+zTools.o: zTools.c zTools.h
+zTransition.o: zTransition.c zTransition.h zMath.h zTools.h zSfeature.h \
+  zDNA.h zSequence.h zEstseq.h zTrellis.h zFeatureFactory.h zScanner.h \
+  zModel.h bntree/bntree.h bntree/node.h bntree/cache.h \
+  bntree/celllistitem.h zConseq.h zAlignment.h zFastaFile.h \
+  zEstseqSearch.h zStopSeq.h zHMM.h zDuration.h zDistribution.h \
+  zHMM_State.h zPhasePref.h zGTF.h
+zTrellis.o: zTrellis.c zTrellis.h zDNA.h zTools.h zSequence.h \
+  zFeatureFactory.h zScanner.h zMath.h zModel.h bntree/bntree.h \
+  bntree/node.h bntree/cache.h bntree/celllistitem.h zEstseq.h zConseq.h \
+  zSfeature.h zAlignment.h zFastaFile.h zEstseqSearch.h zStopSeq.h zHMM.h \
+  zDuration.h zDistribution.h zHMM_State.h zTransition.h zPhasePref.h \
+  zGTF.h
+zViterbi.o: zViterbi.c zTBTree.h zTools.h zTrellis.h zDNA.h zSequence.h \
+  zFeatureFactory.h zScanner.h zMath.h zModel.h bntree/bntree.h \
+  bntree/node.h bntree/cache.h bntree/celllistitem.h zEstseq.h zConseq.h \
+  zSfeature.h zAlignment.h zFastaFile.h zEstseqSearch.h zStopSeq.h zHMM.h \
+  zDuration.h zDistribution.h zHMM_State.h zTransition.h zPhasePref.h \
+  zGTF.h zViterbi.h zAlnFeature.h zPairTrellis.h zPairTransition.h \
+  zSeedUtils.h
+zoe2gtf.o: zoe2gtf.c ZOE.h zConseq.h zSequence.h zTools.h zEstseq.h \
+  zDistribution.h zMath.h zDuration.h zDNA.h zFastaFile.h \
+  zFeatureFactory.h zScanner.h zModel.h bntree/bntree.h bntree/node.h \
+  bntree/cache.h bntree/celllistitem.h zSfeature.h zAlignment.h \
+  zEstseqSearch.h zStopSeq.h zGTF.h zHMM.h zHMM_State.h zTransition.h \
+  zPhasePref.h zPairTransition.h zPairTrellis.h zAlnFeature.h \
+  zSeedUtils.h zProtein.h zTBTree.h zTrellis.h zViterbi.h

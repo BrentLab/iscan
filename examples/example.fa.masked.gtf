@@ -1,0 +1,17 @@
+# ../bin/iscan -o ../parameters/nscan_parameters/human_nscan.zhmm tmp/tmp.115532972690747/chr16 -a=tmp/tmp.115532972690747/chr16.align
+# Date: Thu Apr  5 11:15:19 2007
+# Twinscan version 3.5 build 20060720RZ
+# Genome Parameters: ../parameters/nscan_parameters/human_nscan.zhmm
+# Target Sequence: >example.fa
+# Target Sequence Read... 8516bp C+G = 52.1194%
+# Completed in 6.11 CPU seconds
+# Score: 1595.05
+#
+chr16	iscan	5UTR	506	894	211	+	0	gene_id "chr16.001"; transcript_id "chr16.001.1";
+chr16	iscan	start_codon	895	897	.	+	0	gene_id "chr16.001"; transcript_id "chr16.001.1";
+chr16	iscan	CDS	895	1281	947	+	0	gene_id "chr16.001"; transcript_id "chr16.001.1";
+chr16	iscan	CDS	2135	2315	368	+	0	gene_id "chr16.001"; transcript_id "chr16.001.1";
+chr16	iscan	CDS	2757	2830	194	+	2	gene_id "chr16.001"; transcript_id "chr16.001.1";
+chr16	iscan	CDS	3099	3225	258	+	0	gene_id "chr16.001"; transcript_id "chr16.001.1";
+chr16	iscan	CDS	5530	5646	157	+	2	gene_id "chr16.001"; transcript_id "chr16.001.1";
+chr16	iscan	CDS	6469	7629	456	+	2	gene_id "chr16.001"; transcript_id "chr16.001.1";

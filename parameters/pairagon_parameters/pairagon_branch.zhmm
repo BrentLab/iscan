@@ -1,0 +1,314 @@
+zHMM	name=pairagon	states=17	transitions=28	durations=17	seq_models=34	conseq_models=0
+
+<STATES>
+ISO 1
+100.000000
+       RGenomic1         Internal +    0    RandomGenomic                        RGenomic1 0.985000
+          RCDna1         Internal +    0       RandomCDna                           RCDna1 0.005000
+           Match         Internal +    0            Match                            Match 0.010000
+         DonorU2         Internal +    0          DonorU2                          DonorU2 0.000000
+          AccU2         Internal +    0           AccU2                           AccU2 0.000000
+        DonorU12         Internal +    0         DonorU12                         DonorU12 0.000000
+         AccU12         Internal +    0          AccU12                          AccU12 0.000000
+        IntronU2         Internal +    0         IntronU2                         IntronU2 0.000000
+       IntronU12         Internal +    0        IntronU12                        IntronU12 0.000000
+       BranchU12         Internal +    0        BranchU12                        BranchU12 0.000000
+        BrAccU12         Explicit +    0         BrAccU12                         BrAccU12 0.000000
+        BranchU2         Internal +    0        BranchU12                         BranchU2 0.000000
+         BrAccU2         Explicit +    0         BrAccU12                          BrAccU2 0.000000
+         Genomic         Internal +    0          Genomic                          Genomic 0.000000
+            CDna         Internal +    0             CDna                             CDna 0.000000
+       RGenomic2         Internal +    0    RandomGenomic                        RGenomic2 0.985000
+          RCDna2         Internal +    0       RandomCDna                           RCDna2 0.005000
+
+<STATE_TRANSITIONS>
+ISO 1
+100.000000
+RGenomic1	RCDna1	0.100000
+RGenomic1	Match	0.900000
+RCDna1	Match	1.000000
+Match	DonorU2	0.844279
+Match	DonorU12	0.002436
+Match	Genomic	0.017318
+Match	CDna	0.013502
+Match	RGenomic2	0.110219
+Match	RCDna2	0.012247
+DonorU2	IntronU2	1.000000
+AccU2	Match	0.995478
+AccU2	Genomic	0.003141
+AccU2	CDna	0.001381
+DonorU12	IntronU12	1.000000
+AccU12	Match	0.995478
+AccU12	Genomic	0.003141
+AccU12	CDna	0.001381
+IntronU2	BranchU2	1.000000
+BranchU2	BrAccU2	1.000000
+BrAccU2	AccU2	1.000000
+IntronU12	BranchU12	1.000000
+BranchU12	BrAccU12	1.000000
+BrAccU12	AccU12	1.000000
+Genomic	Match	0.884682
+Genomic	DonorU2	0.114986
+Genomic	DonorU12	0.000332
+CDna	Match	1.000000
+RGenomic2	RCDna2	1.000000
+
+<STATE_DURATIONS>
+RGenomic1 ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		4991	1	
+RCDna1 ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		53	1	
+Match ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		229	1	
+DonorU2 ISO 1 levels
+ISO 100.000000 2
+	CONSTANT 1 1	
+		0	
+	CONSTANT 2 16777216	
+		-300	
+AccU2 ISO 1 levels
+ISO 100.000000 2
+	CONSTANT 1 1	
+		0	
+	CONSTANT 2 16777216	
+		-300	
+DonorU12 ISO 1 levels
+ISO 100.000000 2
+	CONSTANT 1 1	
+		0	
+	CONSTANT 2 16777216	
+		-300	
+AccU12 ISO 1 levels
+ISO 100.000000 2
+	CONSTANT 1 1	
+		0	
+	CONSTANT 2 16777216	
+		-300	
+IntronU2 ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		4875	1	
+IntronU12 ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		4875	1	
+BranchU12 ISO 1 levels
+ISO 100.000000 2
+	CONSTANT 1 1	
+		0	
+	CONSTANT 2 16777216	
+		-300	
+BrAccU12 ISO 1 levels
+ISO 100.000000 2
+	DEFINED 1 30	
+		-43	-42	-41	-40	-40	
+		-40	-40	-40	-41	-41	
+		-42	-43	-44	-46	-48	
+		-49	-52	-54	-56	-59	
+		-62	-65	-68	-72	-76	
+		-80	-84	-88	-93	-97	
+	CONSTANT 31 16777216	
+		-300	
+Genomic ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		7	1	
+CDna ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		6	1	
+RGenomic2 ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		4979	1	
+RCDna2 ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		44	1	
+RandomGenomic ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		45905	1	
+RandomCDna ISO 1 levels
+ISO 100.000000 1
+	GEOMETRIC 1 16777216	
+		1880	1	
+
+<SEQUENCE_MODELS>
+RGenomic1 LUT GENOMIC 1 0 5 0
+	-19	-22	-22	-18	-20	
+RGenomic1NULL LUT GENOMIC 1 0 5 0
+	-19	-22	-22	-18	-20	
+RCDna1 LUT DNA 1 0 5 0
+	-20	-20	-20	-21	-20	
+RCDna1NULL LUT DNA 1 0 5 0
+	-20	-20	-20	-21	-20	
+Match LUT PAIR 2 0 5 0
+	-20	-151	-123	-154	-40	
+	-142	-20	-143	-128	-40	
+	-129	-146	-20	-147	-40	
+	-159	-128	-151	-21	-41	
+	-40	-40	-40	-41	-40	
+MatchNULL LUT PAIR 2 0 5 0
+	-39	-42	-42	-38	-40	
+	-39	-42	-42	-38	-40	
+	-39	-42	-41	-37	-40	
+	-40	-43	-42	-38	-41	
+	-39	-42	-42	-38	-40	
+DonorU2 WMM GENOMIC 8 7 5 0
+	.	.	0	.	.	
+	.	-68	.	-0	.	
+	-8	-52	-15	-52	.	
+	-5	-37	-31	-32	.	
+	-36	-41	-3	-38	.	
+	-25	-27	-24	-11	.	
+	-18	-24	-17	-23	.	
+	-22	-20	-20	-18	.	
+DonorU2NULL WMM GENOMIC 8 7 5 0
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+AccU2 WMM GENOMIC 6 5 5 0
+	-36	-15	-40	-10	.	
+	-36	-17	-40	-9	.	
+	-21	-18	-22	-19	.	
+	-42	-6	-78	-18	.	
+	0	.	.	.	.	
+	.	.	0	.	.	
+AccU2NULL WMM GENOMIC 6 5 5 0
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+DonorU12 WMM GENOMIC 8 7 5 0
+	-18	.	-5	.	.	
+	.	-87	.	-0	.	
+	0	.	.	.	.	
+	-87	-87	.	-0	.	
+	.	-0	.	-87	.	
+	.	-0	.	-61	.	
+	-64	-71	.	-0	.	
+	-77	-40	-49	-2	.	
+DonorU12NULL WMM GENOMIC 8 7 5 0
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+AccU12 WMM GENOMIC 6 5 5 0
+	-23	-17	-25	-17	.	
+	-26	-16	-32	-13	.	
+	-26	-17	-28	-14	.	
+	-35	-6	-54	-21	.	
+	-0	.	-71	.	.	
+	-67	-20	-5	-57	.	
+AccU12NULL WMM GENOMIC 6 5 5 0
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+IntronU2 LUT GENOMIC 1 0 5 0
+	-19	-22	-22	-18	-20	
+IntronU2NULL LUT GENOMIC 1 0 5 0
+	-19	-22	-22	-18	-20	
+IntronU12 LUT GENOMIC 1 0 5 0
+	-19	-22	-22	-18	-20	
+IntronU12NULL LUT GENOMIC 1 0 5 0
+	-19	-22	-22	-18	-20	
+BranchU2 WMM GENOMIC 8 7 5 0
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+BranchU2NULL WMM GENOMIC 8 7 5 0
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+BranchU12 WMM GENOMIC 8 7 5 0
+	-32	-23	-31	-8	-20	
+	-36	-34	-41	-4	-20	
+	-61	-2	-71	-32	-20	
+	-77	-1	.	-36	-20	
+	-67	-53	-87	-1	-20	
+	-71	-87	-56	-0	-20	
+	-6	-59	-20	-43	-20	
+	-1	-67	-38	-67	-20	
+BranchU12NULL WMM GENOMIC 8 7 5 0
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+	-19	-22	-22	-18	-20	
+BrAccU2 LUT GENOMIC 1 0 5 0
+	-19	-22	-22	-18	-20	
+BrAccU2NULL LUT GENOMIC 1 0 5 0
+	-19	-22	-22	-18	-20	
+BrAccU12 LUT GENOMIC 1 0 5 0
+	-19	-22	-22	-18	-20	
+BrAccU12NULL LUT GENOMIC 1 0 5 0
+	-19	-22	-22	-18	-20	
+Genomic LUT GENOMIC 1 0 5 0
+	-19	-22	-22	-18	-20	
+GenomicNULL LUT GENOMIC 1 0 5 0
+	-19	-22	-22	-18	-20	
+CDna LUT DNA 1 0 5 0
+	-20	-21	-21	-18	-20	
+CDnaNULL LUT DNA 1 0 5 0
+	-20	-20	-20	-21	-20	
+RGenomic2 LUT GENOMIC 1 0 5 0
+	-19	-22	-22	-18	-20	
+RGenomic2NULL LUT GENOMIC 1 0 5 0
+	-19	-22	-22	-18	-20	
+RCDna2 LUT DNA 1 0 5 0
+	-11	-24	-25	-25	-20	
+RCDna2NULL LUT DNA 1 0 5 0
+	-20	-20	-20	-21	-20	
+
+<STATE_INCREMENTS>
+                       RGenomic1	1	0
+                          RCDna1	0	1
+                           Match	1	1
+                         DonorU2	8	0
+                          AccU2	6	0
+                        DonorU12	8	0
+                         AccU12	6	0
+                        IntronU2	1	0
+                       IntronU12	1	0
+                        BranchU2	8	0
+                         BrAccU2	1	0
+                       BranchU12	8	0
+                        BrAccU12	1	0
+                         Genomic	1	0
+                            CDna	0	1
+                       RGenomic2	1	0
+                          RCDna2	0	1

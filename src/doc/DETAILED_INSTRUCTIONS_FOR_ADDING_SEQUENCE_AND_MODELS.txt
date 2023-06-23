@@ -1,0 +1,289 @@
+Since this keeps comming up I am going to doccument all the changes
+that need to be made to iscan to add a new sequence and models for
+that sequence to the zoe code base.
+
+GETTING THE SEQUENCE INTO ZOE
+
+iscan.c
+	print_help()
+
+		Update the usage statement to indicate what command
+		line flag you are going to use to read in your
+		sequence file.  Long flags work but not the way they
+		should... if you want to use a flag like "arrayseq"
+		you do -arrayseq not --arrayseq like every other unix
+		program
+
+	main()
+
+		Add a char* variable to store the filename for your
+		new sequence... like char* arrayseq_file
+
+		Add a call to zOption to pull in your filename, there
+		is a whole block of these near the top of main(), one
+		for each input file type they shouldnt be hard to
+		find.  The argument to zOption will be whatever tag
+		you are going to use on the command line
+
+		Read in the file... this happens just before the call
+		to zInitTrellis and there are several examples
+
+		Add an option to zInitTrellis for your sequence
+		filename and add it to the call in iscan.c::main()
+
+ zTrellis.c
+
+	   zInitTrellis()
+
+		Add a boolean variable to indicate whether or not your
+		new sequence type is being used (like conseq_enabled)
+
+		Add a pair of pointers to store your sequence and its
+		reverse (or reverse complement) like trellis->conseq
+		and trellis->rconseq.
+
+		Add an if/else statement to check for the existance of
+		a file of your new type and set the enabled boolean
+		one way or the other
+
+		Add a block of code based on the enabled variable that
+		loads your new sequence if it was passed in on the
+		command line (this block of code calls functions from
+		the source file that defines your sequence type... the
+		best thing to do is just copy Conseq.c and Conseq.h
+		and figure out what needs to be changed in your
+		sequence... can't really say what that will be because
+		it will be different for each sequence type, you need
+		to be able to read it in, copy it, reverse or reverse
+		complement it etc.  If you are brave just copy
+		zConseq.c and .h and do a global replace to change all
+		occurences of "Conseq" and "conseq" to your sequence
+		name)
+
+		There is another block of code that creates scanners
+		for models on your sequence, take a look at the code
+		that does this for the conseq scanners and do
+		something similar for yours.  At this point you will
+		also have to add pointers to the scanner arrays for
+		your sequence in the trellis object. (if you copied
+		the conseq block of code here note that you will have
+		to change all references to cmmap to reflect the map
+		for your new sequence!)
+
+		After all the scanners are setup a call is made to
+		zAllocFactories... add as an argument to this function
+		your x_enabled variable.
+
+	zAllocFactories()
+
+		Add as an argument the enabled variable for your sequence.
+
+		There is this huge horrible ugly call to this function
+		pointer that looks like state->ffactory(..huge
+		argument list..).  You have to add entrys for your
+		sequence scanners and enabled variable and it should
+		be pretty easy to see how once you get there.
+
+		That should be it for zTrellis.c
+
+zTrellis.h
+
+		#include z<your sequence>rseq.h
+
+		Add 2 pointers to your new sequence object, one for
+		the forwrd and one for the reverse of your sequence in
+		the zTrellis object
+
+		Add 2 pointers of type zScanner to the sTrellis object
+		to point to the foward and reverse scanners on your
+		new sequence
+
+zModel.h
+
+		You'll have to add a new sequence type to the
+		enumerated zSeqType type corresponding to your
+		sequence, one of the changes you made in zTrellis.c
+		will force this and the compiler will let you know if
+		you dont make the neccessary change.
+
+
+zFeatureFactory.c
+
+	zInitEFactory() (and InitEpaFactory and InitEpFactory and zInitEncFactory...)
+
+		When you added those 3 arguments to that annoying
+		function pointer you basically broke the call to this
+		function.  That is going to break a bunch of other
+		functions.  There are several functions with similar
+		sounding names that all they do is call
+		zInitEFactory(), find all of those and make the
+		neccessary changes to the argument list. (need to make
+		some changes in zFeatureFactory.h at this point see
+		below)
+
+		At this point the compiler will be complaining that
+		you arent using the arguments you just added to this
+		function... so add some code that uses them!  Each
+		peice of exon score is associated with a scanner and
+		this is where they get declared and initilized.  I'm
+		going to assume that to start you are just going to
+		add one scoring model to your new sequence (a content
+		model)... if you are adding a lot (conten model,
+		acceptor site model, donor site model, etc...) you
+		might want to just clone something like the conseq
+		model.
+
+		Anyway... first declare a pointer to the content model
+		on your sequence at the top of the function... like
+		"zScanner *cdsarray_scan;".
+
+		Next null out that pointer in the code block below the
+		declerations.
+
+		Below that is a block of if statements that check to
+		see if the various scanner pointers are null or
+		not... add one for your scanner and whatever models
+		you are going to be using (the model names there are
+		the model names as they must appear in the parameter
+		file so makesure you know exactly what your model
+		names will be in the paramterfle)
+
+		Below that is a bunch of calls to
+		zPreComputeScanner... write code to check to see if
+		your sequence type is enabled and call
+		zPreComputeScanner on whatever models you have set up.
+
+		Below that is some code that sets factory
+		attributes... look at the conseq code here and make
+		one for your sequence.
+
+		Below that is code that links the factories to the
+		scanners you just setup, make the neccessary additions.
+
+		If you did all of that you just added a bunch of stuff
+		to the FeatureFactory structure so you are going to
+		have to dip into zFeatureFactory.h and make the
+		neccessary additions. (an enabled boolean and a
+		pointer to your scanners... see conscan for an
+		example)
+
+	Top level
+
+		You'll also have to go up to the top of the file and
+		#define the number of scanners you added for your
+		sequence and some constants that get used as array
+		indices for the scanner names.  It's pretty obvious
+		what you need to to when you see the #define chain.
+
+	zInitPolyAFactory()
+
+		Have to make some special changes to this
+		function... they are compiler hushes and are noted in
+		the code.
+
+	zInitPromFactory()
+
+		Same little BS compiler hushes as in the polyA factory.
+
+
+zFeatureFactory.h
+
+		Need to change the prototype for the long annoying
+		function zFFInit to reflect the changes you made in
+		the calls to that function pointer or the compiler
+		will throw a bunch of warnings.
+
+zPairTrellis.c
+
+	zAllocFactories()
+
+		(Yeah... I know...) The changes you made broke a
+		function pointer function call in zAllocFactories()
+		used in Mani's pair HMM code... all you have to do is
+		shove a NULL and a false into the right slots here and
+		that should go away.
+
+zScanner.h
+
+		#include the headder file for your new sequence.
+
+Makefile
+
+		Right about now you are trying to build and the linker
+		is bitching to you about undefined references to the
+		functions that handle your sequene (remember the copy
+		of zConseq.c and .h you made?) the reason is YOU
+		AREN'T COMPILING THEM BECAUSE THE MAKEFILE DOESN'T
+		KNOW ABOUT THEM (that was a fun !@#$ing bug to track
+		down)
+
+		Add your new file to the list of object files
+
+zScanner.c
+
+	zInitScannerReal()
+
+		There is a big if/else if/else if chain in this
+		function for the sequence type of the scanner... will
+		have to wedge your sequence type into this and write
+		or copy and paste new functions for whatever models
+		you want to score on it
+
+GETTING THE PARAMETERS IN FROM THE PARAMETER FILE
+
+zHMM.c
+	Top level
+
+	    re #define KNOWN_TAGS to one more than it is now
+
+	    Add an entry to the tags array for your sequence type
+	    <ARRAYSEQ_MODELS> in my case, this lets the parser know
+	    that ther is another sequence type comming in from the
+	    paramter file
+
+	    zMapHMM()
+
+		Look for cmmap and how it is set up.  Will have to
+		make another one of these for your new sequence type.
+
+
+	   zReadHMM()
+
+		Need to add another variable to hold the number of
+		models on your new sequence, like the cons_models
+		variable.
+
+		Need to add code to parse another possible line in the
+		headder of the parameter file that tells how many
+		models are defined on your new sequence type.  This is
+		near the top of the zReadHMM function and there are
+		several examples for other sequene types.
+
+
+		Below that you need to set the number of model
+		variable in the hmm object with the value you parsed
+		in from the parameter file and allocate storage for
+		the models you are going to be setting up in the hmm
+		object.
+
+		Below that there is a big if/else if/else if/... chain
+		that parses in the different sections of the parameter
+		file.  You will have to add a new one for your
+		sequence type.
+
+
+zModel.c
+
+	zReadModel()
+
+		There is an if/else if/else if chain that handles each
+		sequence type near the top of the function, will have
+		to add an entry for your sequence type
+
+
+At this point you should be able to compile with your new sequence and
+model crammed into the code.  All the peices are there to use the
+sequence and model but at this point they aren't adding anything into
+the exon score which is presumably why you are doing this (either that
+or you just have a thing for pain... whatever floats your boat...)
+
